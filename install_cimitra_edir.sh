@@ -64,7 +64,7 @@ fi
 echo ""
 echo "Download Begin"
 echo "--------------"
-curl -LJO ${GITHUB_EDIR_SCRIPT} -o ./${EDIR_SCRIPT}
+curl -vLJO ${GITHUB_EDIR_SCRIPT} -o ./${EDIR_SCRIPT}
 declare -i EXIT_CODE=`echo $?` 
 echo "--------------"
 echo "Download End"
