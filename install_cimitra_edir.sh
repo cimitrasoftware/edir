@@ -66,8 +66,7 @@ echo "Download Begin"
 echo "--------------"
 curl -vLJO ${GITHUB_EDIR_SCRIPT} -o ./${EDIR_SCRIPT}
 declare -i EXIT_CODE=`echo $?` 
-echo "--------------"
-echo "Download End"
+
 
 {
 curl -LJO ${GITHUB_EDIR_UPGRADE_SCRIPT} -o ./${EDIR_UPGRADE_SCRIPT} 
@@ -80,6 +79,12 @@ if [ $EXIT_CODE -ne 0 ]
 then
 	echo "Error: Unable To Download Cimitra eDirectory Script"
 	exit 1
+else
+
+	echo "Success Cimitra eDirectory Practice Bash Script Installed"
+	echo "--------------"
+	echo "Download End"
+
 fi
 
 cd ${INSTALL_DIRECTORY} 1> /dev/null 2> /dev/null 
