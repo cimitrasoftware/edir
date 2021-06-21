@@ -82,6 +82,8 @@ then
 else
 
 	echo "Success Cimitra eDirectory Practice Bash Script Installed"
+	echo ""
+	echo "NOTE: Make Sure to Configure the Settings File: /var/opt/cimitra/scripts/edir/settings_edir.cfg"
 	echo "--------------"
 	echo "Download End"
 
