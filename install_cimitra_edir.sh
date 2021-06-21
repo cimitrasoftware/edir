@@ -6,6 +6,7 @@
 declare TEMP_FILE_DIRECTORY="/var/tmp"
 
 INSTALL_DIRECTORY="/var/opt/cimitra/scripts/edir"
+SETTINGS_FILE="${INSTALL_DIRECTORY}/settings_edir.cfg"
 
 mkdir -p ${INSTALL_DIRECTORY}
 
@@ -161,6 +162,9 @@ if [ $EXIT_CODE -eq 0 ]
 then
 	echo ""
 	echo "Cimitra eDirectory Script Installed Successfully"
+	echo ""
+	echo ""
+	echo "Make Sure to Configure the Settings File: ${SETTINGS_FILE}"
 	echo ""
 	exit 0
 else
