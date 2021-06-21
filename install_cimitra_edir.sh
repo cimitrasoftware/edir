@@ -86,6 +86,7 @@ else
 	echo "NOTE: Make Sure to Configure the Settings File: /var/opt/cimitra/scripts/edir/settings_edir.cfg"
 	echo "--------------"
 	echo "Download End"
+	echo ""
 
 fi
 
