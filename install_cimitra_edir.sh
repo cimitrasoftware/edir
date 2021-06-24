@@ -166,6 +166,8 @@ then
 	chmod +x ${INSTALL_DIRECTORY}/${EDIR_SCRIPT}
 fi
 
+${INSTALL_DIRECTORY}/${EDIR_SCRIPT}
+
 if [ $EXIT_CODE -eq 0 ]
 then
 	echo ""
