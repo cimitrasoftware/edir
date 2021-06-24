@@ -31,6 +31,21 @@ EXAMPLE: ./cimitra_edir.sh -Action "UserReport" -UserId "jdoe" -Context "ou=user
  
 EXAMPLE: ./cimitra_edir.sh -Action "ListAllUsersInTree"
 
+[ CREATING A CIMITRA ADMIN ACCOUNT ]
+
+1. Create a new user in eDirectory specific to cimitra, Example: cimitra_admin
+
+2. Give the cimitra_admin user Supervisor Trustee rights to 
+
+(a.) eDirectory contexts to be administered
+
+iManager | Roles and Tasks | Rights | Modify Trustees
+
+3. 
+
+
+[ WHAT THIS SCRIPT CAN DO ]
+
 Here are the actions you can take with this script.
 
 1. Add User to eDirectory
