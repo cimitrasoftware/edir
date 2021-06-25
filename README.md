@@ -34,30 +34,52 @@ cd /var/opt/cimitra/scritps/edir
 
 4. Run: ./cimitra_edir.sh
 
-5. Edit the settings_edir.cfg file with variables needed to authenticate to your eDirectory tree via LDAP
-
-(a.) Fill in the config file, make sure that you at least fill in: **EDIR_AUTH_STRING**, **EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_ONE**, **EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_ONE**, and **EDIR_USER**
-
-NOTE: If you don't want to use an already established Admin Level eDirectory account read the section below titled:  
+5. Edit the settings_edir.cfg file with the settings needed to authenticate to your eDirectory tree via LDAP
+\
+***NOTE:*** If you don't want to use an already established Admin Level eDirectory account read the section below titled:  
 **"[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]"**
+\
 
-EDIR_AUTH_STRING="YouLetC1m1tra1n"
-EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_ONE="192.168.1.53"
-EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_ONE="389"
+(a.) Fill in the config file, make sure that you at least fill in:
+
+**EDIR_AUTH_STRING**
+
+**EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_ONE** 
+
+**EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_ONE**
+
+**EDIR_USER**
+
+***[Example]***
+
+**EDIR_AUTH_STRING="YouLetC1m1tra1n"**
+
+**EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_ONE="192.168.1.53"**
+
+**EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_ONE="389"**
+
 EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_TWO="192.168.1.54"
 EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_TWO="389"
 EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_THREE="192.168.1.54"
 EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_THREE="389"
-EDIR_USER="cn=cimitra_admin,o=edir_o"
+
+**EDIR_USER="cn=cimitra_admin,o=edir_o"**
+
 EDIR_EXCLUDE_GROUP=""
 
-6. To do a **quick test** to see if everything is configured correctly, then run the Cimitra eDirectory Practice script as follows: 
+**HOW TO TEST YOUR CONFIGURATION**
 
-Run: ./cimitra_edir.sh -Action "[some action]"
+To do a **quick test** to see if everything is configured correctly, then run the Cimitra eDirectory Practice script as follows: 
+
+*Run:* ./cimitra_edir.sh -Action "[some action]"
   
-EXAMPLE: ./cimitra_edir.sh -Action "UserReport" -UserId "jdoe" -Context "ou=users,o=edir_o"
+*EXAMPLE:*  **./cimitra_edir.sh -Action "UserReport" -UserId "jdoe" -Context "ou=users,o=edir_o"**
+
+
   
 **[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
+\
+***NOTE: Follow this section if you intend to make a "Cimitra Admin" account rather than using an already established Admin-level eDirectory account***
 
 1. Create a new user in eDirectory specific to cimitra, Example: cimitra_admin.edir_o
 
