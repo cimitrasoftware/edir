@@ -1,3 +1,4 @@
+![create_user](https://user-images.githubusercontent.com/55113746/123368943-fa0de980-d539-11eb-9ab5-0dd05d11d6da.gif)
 ![edir_practice_main_screen](https://user-images.githubusercontent.com/55113746/123368617-5c1a1f00-d539-11eb-842e-4010b50c7bc3.JPG)
 # edir
 **Cimitra's eDirectory Practice**
