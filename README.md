@@ -24,23 +24,23 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 1. In a terminal on a Linux server, most likely a SUSE Server with eDirectory installed
 
-2. Install the Cimitra's eDirectory Script with the command below
+2. Install the Cimitra's eDirectory Script with the command below:
 
 curl -fsSL https://raw.githubusercontent.com/cimitrasoftware/edir/main/install.sh | sh
 
 3. Go to the directory /var/opt/cimitra/scritps/edir
 
-cd /var/opt/cimitra/scritps/edir
+**cd /var/opt/cimitra/scritps/edir**
 
-4. Run: ./cimitra_edir.sh
+4. **Run** the script as follows: **./cimitra_edir.sh**
 
-5. Edit the settings_edir.cfg file with the settings needed to authenticate to your eDirectory tree via LDAP
+5. **Edit** the **settings_edir.cfg** file with the settings needed to authenticate to your eDirectory tree via LDAP
 \
 ***NOTE:*** If you don't want to use an already established Admin Level eDirectory account read the section below titled:  
 **"[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]"**
 \
 
-(a.) Fill in the config file, make sure that you at least fill in:
+(a.) Fill in the settings config file, make sure that you at least fill in:
 
 **EDIR_AUTH_STRING**
 
@@ -67,7 +67,7 @@ EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_THREE="389"
 
 EDIR_EXCLUDE_GROUP=""
 
-**HOW TO TEST YOUR CONFIGURATION**
+**HOW TO TEST YOUR CONFIGURATION SETTINGS**
 
 To do a **quick test** to see if everything is configured correctly, then run the Cimitra eDirectory Practice script as follows: 
 
@@ -75,13 +75,17 @@ To do a **quick test** to see if everything is configured correctly, then run th
   
 *EXAMPLE:*  **./cimitra_edir.sh -Action "UserReport" -UserId "jdoe" -Context "ou=users,o=edir_o"**
 
+-OR-
 
+*EXAMPLE:*  **./cimitra_edir.sh -Action "ListUsersInContext" -Context "ou=users,o=edir_o"**
+
+***NOTE: There is no need to proceed until you have actually gotten a test to work!***
   
 **[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
 \
 ***NOTE: Follow this section if you intend to make a "Cimitra Admin" account rather than using an already established Admin-level eDirectory account***
 
-1. Create a new user in eDirectory specific to cimitra, Example: cimitra_admin.edir_o
+1. Create a new user in eDirectory specific to cimitra, *Example:* cimitra_admin.edir_o
 
 2. Give the cimitra_admin user the following rights: 
 
@@ -91,7 +95,7 @@ iManager | Roles and Tasks | Rights | Modify Trustees | Object Name
 
 - Choose a Context users that will be administered within Cimitra
 - Add Trustee
-- Choose the Cimitra Admin, Example: cimitra_admin.edir_o
+- Choose the Cimitra Admin, *Example:* cimitra_admin.edir_o
 - Choose **Assigned Rights**
 - Select **Supervisor** for both [All Attributes Rights] & [Entry Rights]
 - Select **Done** | **Apply**
@@ -114,6 +118,9 @@ Edit the Cimitra eDirectory Practice Settings File:
 /var/opt/cimitra/scritps/edir/settings_edir.cfg
 
 Update the following two setting: 
+
+*Example*
+
 **EDIR_USER="cn=cimitra_admin,o=edir_o"**
 **EDIR_AUTH_STRING="YouLetC1m1tra1n"**
 
@@ -165,14 +172,14 @@ Here are the actions you can take with this script.
  3. Go to the NetIQ eDirectory Folder
  4. If you have already installed the Cimitra eDirectory Practice, skip importing the "INSTALL NETIQ EDIRECTORY PRACTICE"
  5. If you haven't done the install, then click in the "INSTALL NETIQ EDIRECTORY PRACTICE" Action
- 6. Copy the Import URL to the URL to your computer's clipboard **STAY LOGGED INTO app.cimitra.com**
+ 6. Copy the **Import URL** to the URL to your computer's clipboard **STAY LOGGED INTO app.cimitra.com**
  7. Log in as an Admin user in your Cimitra System
  8. Create a Cimitra Folder where you are going to place the Cimitra Actions you are importing
  9. Select Create | **Import** (If you don't see "Import" under the Create menu, upgrade your Cimitra server)
- (a.) To Upgrade Your Cimitra Server: cimitra server upgrade
- 10. When you get the Import dialog, select the URL option and paste the Import URL from step 6.
- 11. When the Action create dialog comes up, choose the Linux based Cimitra Agent that you installed earlier on a Linux server with access to eDirectory
- 12. For each Cimitra Action you see, follow the same import actions for each Cimitra Action
+    (a.) To Upgrade Your Cimitra Server: cimitra server upgrade
+ 10. When you get the Import dialog, select the URL option and **paste the Import URL** from step 6.
+ 11. When the Action create dialog comes up, **choose the Linux based Cimitra Agent that you installed earlier on the Linux server with access to eDirectory**
+ 12. For each Cimitra Action you see, **follow the same import actions for each Cimitra Action** you see that you want to use in your own Cimitra system
  
- NOTE: You will need to change the Context/Division in each Cimitra Action that you import, in order to for the Cimitra Actions to match your eDirectory contexts
+ NOTE: You will need to **change the Context/Division in each Cimitra Action** that you import, in order to for the Cimitra Actions to match your eDirectory contexts
 
