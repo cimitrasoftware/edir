@@ -1,11 +1,12 @@
 # edir
 **Cimitra's eDirectory Practice**
 Sections Below
+
 **[INSTALL]**
 
 **[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
 
-**[ WHAT THIS SCRIPT CAN DO ]**\
+**[ WHAT THIS SCRIPT CAN DO ]**
 
 **[ IMPORTING ACTIONS INTO CIMITRA THAT USE THE CIMITRA EDIRECTORY PRACTICE SCRIPT ]**
 
@@ -129,5 +130,14 @@ Here are the actions you can take with this script.
  3. Go to the NetIQ eDirectory Folder
  4. If you have already installed the Cimitra eDirectory Practice, skip importing the "INSTALL NETIQ EDIRECTORY PRACTICE"
  5. If you haven't done the install, then click in the "INSTALL NETIQ EDIRECTORY PRACTICE" Action
- 6. Copy the 
-"
+ 6. Copy the Import URL to the URL to your computer's clipboard **STAY LOGGED INTO app.cimitra.com**
+ 7. Log in as an Admin user in your Cimitra System
+ 8. Create a Cimitra Folder where you are going to place the Cimitra Actions you are importing
+ 9. Select Create | **Import** (If you don't see "Import" under the Create menu, upgrade your Cimitra server)
+ (a.) To Upgrade Your Cimitra Server: cimitra server upgrade
+ 10. When you get the Import dialog, select the URL option and paste the Import URL from step 6.
+ 11. When the Action create dialog comes up, choose the Linux based Cimitra Agent that you installed earlier on a Linux server with access to eDirectory
+ 12. For each Cimitra Action you see, follow the same import actions for each Cimitra Action
+ 
+ NOTE: You will need to change the Context/Division in each Cimitra Action that you import, in order to for the Cimitra Actions to match your eDirectory contexts
+
