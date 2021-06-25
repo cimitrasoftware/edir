@@ -131,11 +131,11 @@ Here are the actions you can take with this script.
  
  **Copying the Import URL from app.cimitra.com | Importing Into Your Cimitra System**
  
- **COPY**
+ **COPY (Looping Animated GIF)**
  
 ![create_user](https://user-images.githubusercontent.com/55113746/123368943-fa0de980-d539-11eb-9ab5-0dd05d11d6da.gif)
  
- **IMPORT**
+ **IMPORT (Looping Animated GIF)**
  
 ![import_create_user](https://user-images.githubusercontent.com/55113746/123369537-2bd38000-d53b-11eb-8fb3-248cda30fd2b.gif)
  1. Go to app.cimitra.com
