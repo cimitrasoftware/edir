@@ -2,9 +2,13 @@
 **Cimitra's eDirectory Practice**
 Sections Below
 **[INSTALL]**
+
 **[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
-**[ WHAT THIS SCRIPT CAN DO ]**
+
+**[ WHAT THIS SCRIPT CAN DO ]**\
+
 **[ IMPORTING ACTIONS INTO CIMITRA THAT USE THE CIMITRA EDIRECTORY PRACTICE SCRIPT ]**
+
 
 **25 Common Actions For eDirectory Accounts**
 
