@@ -1,13 +1,18 @@
 # edir
-Cimitra's eDirectory Practice
+**Cimitra's eDirectory Practice**
+Sections Below
+**[INSTALL]**
+**[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
+**[ WHAT THIS SCRIPT CAN DO ]**
+**[ IMPORTING ACTIONS INTO CIMITRA THAT USE THE CIMITRA EDIRECTORY PRACTICE SCRIPT ]**
 
-25 Common Actions For eDirectory Accounts
+**25 Common Actions For eDirectory Accounts**
 
 This script allows for dozens of modifications you can make to eDirectory User accounts. For example, you can create a user in eDirectory, and set several of their attributes at the time of the user creation event.
 
 Or you can modify only one or some attributes of an existing eDirectory User account.
 
-[ INSTALL ]
+**[ INSTALL ]**
 
 1. In a terminal on a Linux server, most likely a SUSE Server with eDirectory installed
 
@@ -23,28 +28,67 @@ cd /var/opt/cimitra/scritps/edir
 
 5. Edit the settings_edir.cfg file with variables needed to authenticate to your eDirectory tree via LDAP
 
-6. Run: ./cimitra_edir.sh -Action "[some action]"
+(a.) Fill in the config file, make sure that you at least fill in: **EDIR_AUTH_STRING**, **EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_ONE**, **EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_ONE**, and **EDIR_USER**
+
+NOTE: If you don't want to use an already established Admin Level eDirectory account read the section below titled:  
+**"[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]"**
+
+EDIR_AUTH_STRING="YouLetC1m1tra1n"
+EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_ONE="192.168.1.53"
+EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_ONE="389"
+EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_TWO="192.168.1.54"
+EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_TWO="389"
+EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_THREE="192.168.1.54"
+EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_THREE="389"
+EDIR_USER="cn=cimitra_admin,o=edir_o"
+EDIR_EXCLUDE_GROUP=""
+
+6. To do a **quick test** to see if everything is configured correctly, then run the Cimitra eDirectory Practice script as follows: 
+
+Run: ./cimitra_edir.sh -Action "[some action]"
   
-EXAMPLE: ./cimitra_edir.sh -Action "UserReport" -UserId "jdoe" -Context "ou=users,o=cimitra"
+EXAMPLE: ./cimitra_edir.sh -Action "UserReport" -UserId "jdoe" -Context "ou=users,o=edir_o"
   
--OR- 
- 
-EXAMPLE: ./cimitra_edir.sh -Action "ListAllUsersInTree"
+**[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
 
-[ CREATING A CIMITRA ADMIN ACCOUNT ]
+1. Create a new user in eDirectory specific to cimitra, Example: cimitra_admin.edir_o
 
-1. Create a new user in eDirectory specific to cimitra, Example: cimitra_admin
+2. Give the cimitra_admin user the following rights: 
 
-2. Give the cimitra_admin user Supervisor Trustee rights to 
+(a.) eDirectory Trustee rights within contexts to be administered within Cimitra
 
-(a.) eDirectory contexts to be administered
+iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
 
-iManager | Roles and Tasks | Rights | Modify Trustees
+- Choose a Context users that will be administered within Cimitra
+- Add Trustee
+- Choose the Cimitra Admin, Example: cimitra_admin.edir_o
+- Choose **Assigned Rights**
+- Select **Supervisor** for both [All Attributes Rights] & [Entry Rights]
+- Select **Done** | **Apply**
 
-3. 
+Repeat step (a.) for each context with users that will be administered within Cimitra
+
+(b.) eDirectory Trustee rights to Root organization of the tree (don't worry, no admin rights needed here)
+
+iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
+
+- Choose a Root context of the tree
+- Add Trustee
+- Choose the Cimitra Admin, Example: cimitra_admin.edir_o
+- Choose **Assigned Rights**
+- Select **Read** and **Inherit** for [All Attributes Rights] 
+- Select **Done** | **Apply**
+
+Edit the Cimitra eDirectory Practice Settings File: 
+
+/var/opt/cimitra/scritps/edir/settings_edir.cfg
+
+Update the following two setting: 
+**EDIR_USER="cn=cimitra_admin,o=edir_o"**
+**EDIR_AUTH_STRING="YouLetC1m1tra1n"**
 
 
-[ WHAT THIS SCRIPT CAN DO ]
+**[ WHAT THIS SCRIPT CAN DO ]**
 
 Here are the actions you can take with this script.
 
@@ -74,3 +118,12 @@ Here are the actions you can take with this script.
 24. Search for a user object, choosing attributes of the user, for example, their phone number with the full phone number specified: 801-555-1212
 25. Wildcard Search for a user object, choosing partial attributes of the user, for example, search for their their phone number with: 801-555
  
+ 
+ **[ IMPORTING ACTIONS INTO CIMITRA THAT USE THE CIMITRA EDIRECTORY PRACTICE SCRIPT ]**
+ 1. Go to app.cimitra.com
+ 2. Login as Userid: import@cimitra.com | Password: 123
+ 3. Go to the NetIQ eDirectory Folder
+ 4. If you have already installed the Cimitra eDirectory Practice, skip importing the "INSTALL NETIQ EDIRECTORY PRACTICE"
+ 5. If you haven't done the install, then click in the "INSTALL NETIQ EDIRECTORY PRACTICE" Action
+ 6. Copy the 
+"
