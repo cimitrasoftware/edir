@@ -1,4 +1,4 @@
-![create_user](https://user-images.githubusercontent.com/55113746/123368943-fa0de980-d539-11eb-9ab5-0dd05d11d6da.gif)
+**Cimitra's eDirectory Practice**
 ![edir_practice_main_screen](https://user-images.githubusercontent.com/55113746/123368617-5c1a1f00-d539-11eb-842e-4010b50c7bc3.JPG)
 # edir
 **Cimitra's eDirectory Practice**
@@ -127,6 +127,8 @@ Here are the actions you can take with this script.
  
  
  **[ IMPORTING ACTIONS INTO CIMITRA THAT USE THE CIMITRA EDIRECTORY PRACTICE SCRIPT ]**
+ **Copying the Import URL from app.cimitra.com**
+![create_user](https://user-images.githubusercontent.com/55113746/123368943-fa0de980-d539-11eb-9ab5-0dd05d11d6da.gif)
  1. Go to app.cimitra.com
  2. Login as Userid: import@cimitra.com | Password: 123
  3. Go to the NetIQ eDirectory Folder
