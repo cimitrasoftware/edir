@@ -143,14 +143,9 @@ then
 fi
 
 {
-cp ${TEMP_FILE_DIRECTORY}/${EDIR_SCRIPT}  ${INSTALL_DIRECTORY}/${EDIR_UPGRADE_SCRIPT}
+cp ${TEMP_FILE_DIRECTORY}/${EDIR_SCRIPT}  ${INSTALL_DIRECTORY}/${EDIR_SCRIPT} 
 }  1>> /dev/null 2>> /dev/null
 
-{
-chmod +x ${INSTALL_DIRECTORY}/${EDIR_UPGRADE_SCRIPT}
-} 1>> /dev/null 2>> /dev/null
-
-cp -v ${TEMP_FILE_DIRECTORY}/${EDIR_SCRIPT}  ${INSTALL_DIRECTORY}/${EDIR_SCRIPT} 
 declare -i EXIT_CODE=`echo $?`
 
 	if [ $EXIT_CODE -ne 0 ]
@@ -161,9 +156,29 @@ declare -i EXIT_CODE=`echo $?`
 		exit 1
 	fi
 
+{
+chmod +x ${INSTALL_DIRECTORY}/${EDIR_SCRIPT}
+} 1>> /dev/null 2>> /dev/null
+
+declare -i EXIT_CODE=`echo $?`
+
+	if [ $EXIT_CODE -ne 0 ]
+	then
+		echo ""
+		echo "Error: Insufficient Rights in Directory: ${INSTALL_DIRECTORY}"
+		echo ""
+		exit 1
+	fi
+
+{
+cp -v ${TEMP_FILE_DIRECTORY}/${EDIR_UPGRADE_SCRIPT}  ${INSTALL_DIRECTORY}/${EDIR_UPGRADE_SCRIPT}
+}  1>> /dev/null 2>> /dev/null
+
+
+
 if [ $CIMITRA_EDIR_SCRIPT_EXISTS -ne 0 ]
 then
-	chmod +x ${INSTALL_DIRECTORY}/${EDIR_SCRIPT}
+	chmod +x ${INSTALL_DIRECTORY}/${EDIR_UPGRADE_SCRIPT}
 fi
 
 ${INSTALL_DIRECTORY}/${EDIR_SCRIPT}
