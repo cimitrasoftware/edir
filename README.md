@@ -26,7 +26,7 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 2. Install the Cimitra's eDirectory Script with the command below:
 
-curl -fsSL https://raw.githubusercontent.com/cimitrasoftware/edir/main/install.sh | sh
+**curl -fsSL https://git.io/Jc5Yj | sh **
 
 3. Go to the directory /var/opt/cimitra/scritps/edir
 
