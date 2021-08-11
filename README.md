@@ -14,7 +14,7 @@ Sections Below
 **[ IMPORTING ACTIONS INTO CIMITRA THAT USE THE CIMITRA EDIRECTORY PRACTICE SCRIPT ]**
 
 
-**25 Common Actions For eDirectory Accounts**
+**30 Common Actions For eDirectory Accounts**
 
 This script allows for dozens of modifications you can make to eDirectory User accounts. For example, you can create a user in eDirectory, and set several of their attributes at the time of the user creation event.
 
@@ -154,6 +154,11 @@ Here are the actions you can take with this script.
 23. Remove an eDirectory User from an eDirectory Group
 24. Search for a user object, choosing attributes of the user, for example, their phone number with the full phone number specified: 801-555-1212
 25. Wildcard Search for a user object, choosing partial attributes of the user, for example, search for their their phone number with: 801-555
+26. Create an eDirectory Group
+27. Report on eDirectory Groups in an OU
+28. List eDirectory Group Membership
+29. Add users to an eDirectory Group
+30. Bulk add users to an eDirectory Group
  
  
  **[ IMPORTING ACTIONS INTO CIMITRA THAT USE THE CIMITRA EDIRECTORY PRACTICE SCRIPT ]**
