@@ -19,7 +19,7 @@ Sections Below
 This script allows for dozens of modifications you can make to eDirectory User accounts. For example, you can create a user in eDirectory, and set several of their attributes at the time of the user creation event.
 
 Or you can modify only one or some attributes of an existing eDirectory User account.
-#install-heading
+
 **[ INSTALL ]**
 
 1. In a terminal on a Linux server, most likely a SUSE Server with eDirectory installed
