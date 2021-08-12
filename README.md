@@ -5,7 +5,7 @@
 **Cimitra's eDirectory Practice**
 Sections Below
 
-**[INSTALL]**
+#install-heading
 
 **[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
 
@@ -20,7 +20,7 @@ This script allows for dozens of modifications you can make to eDirectory User a
 
 Or you can modify only one or some attributes of an existing eDirectory User account.
 
-**[ INSTALL ]**
+**[INSTALL](#install-heading)**
 
 1. In a terminal on a Linux server, most likely a SUSE Server with eDirectory installed
 
