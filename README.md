@@ -26,13 +26,13 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 2. Install the Cimitra's eDirectory Script with the command below:
 
-**curl -fsSL https://git.io/Jc5Yj | sh **
+curl -fsSL https://git.io/Jc5Yj | sh 
 
 3. Go to the directory /var/opt/cimitra/scritps/edir
 
-**cd /var/opt/cimitra/scritps/edir**
+cd /var/opt/cimitra/scritps/edir
 
-4. **Run** the script as follows: **./cimitra_edir.sh**
+4. **Run** the script as follows: ./cimitra_edir.sh**
 
 5. **Edit** the **settings_edir.cfg** file with the settings needed to authenticate to your eDirectory tree via LDAP
 \
