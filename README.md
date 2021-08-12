@@ -5,7 +5,7 @@
 **Cimitra's eDirectory Practice**
 Sections Below
 
--[INSTALL](#install)
+- [INSTALL](#install)
 
 **[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
 
