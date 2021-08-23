@@ -172,6 +172,13 @@ Here are the actions you can take with this script.
  **IMPORT (Looping Animated GIF)**
  
 ![import_create_user](https://user-images.githubusercontent.com/55113746/123369537-2bd38000-d53b-11eb-8fb3-248cda30fd2b.gif)
+
+[USE THIS DOCUMENT](https://github.com/cimitrasoftware/edir/blob/main/edir_import_instructions.pdf)
+
+-OR-
+
+FOLLOW THESE STEPS
+
  1. Go to app.cimitra.com
  2. Login as Userid: import@cimitra.com | Password: 123
  3. Go to the NetIQ eDirectory Folder
