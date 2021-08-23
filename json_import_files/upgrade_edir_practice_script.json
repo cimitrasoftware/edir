@@ -1,0 +1,1 @@
+{"paramsRunButtons":"top","cronEnabled":false,"type":1,"status":"active","itemtype":"App","injectParams":[],"comments":[],"platform":"linux","command":"curl -fsSL https://git.io/Jc5Yj | sh 2> /dev/null","cronZone":"Etc/UTC","name":"UPGRADE CIMITRA EDIR PRACTICE","__v":1,"shares":[],"checksum":1759509847}
