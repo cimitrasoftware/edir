@@ -175,7 +175,7 @@ Here are the actions you can take with this script.
 
 **[READ AND FOLLOW THIS DOCUMENT - Instructions for importing Cimitra Pre-Made Actions](https://github.com/cimitrasoftware/edir/blob/main/edir_import_instructions.pdf)**
 
-**https://github.com/cimitrasoftware/edir/blob/main/edir_import_instructions.pdf**
+**NOTE: Make sure to download the PDF file so you can use the Copy and Paste feature**
 
 -OR-
 
