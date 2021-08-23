@@ -173,7 +173,7 @@ Here are the actions you can take with this script.
  
 ![import_create_user](https://user-images.githubusercontent.com/55113746/123369537-2bd38000-d53b-11eb-8fb3-248cda30fd2b.gif)
 
-**[USE THIS DOCUMENT](https://github.com/cimitrasoftware/edir/blob/main/edir_import_instructions.pdf)**
+**[READ AND FOLLOW THIS DOCUMENT - Instructions for importing Cimitra Pre-Made Actions](https://github.com/cimitrasoftware/edir/blob/main/edir_import_instructions.pdf)**
 
 -OR-
 
