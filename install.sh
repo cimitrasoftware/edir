@@ -9,6 +9,8 @@ curl -LJO --fail --location --progress-bar --output "install_cimitra_edir.sh" "$
 
 chmod +x "./install_cimitra_edir.sh"
 
+{
 dos2unix ./install_cimitra_edir.sh
+} 1>> /dev/null 2>> /dev/null
 
 ./install_cimitra_edir.sh
