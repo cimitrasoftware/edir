@@ -5,7 +5,7 @@
 
 **Cimitra's eDirectory Practice**
 
-Cimitra's eDirectory Practice is on Bash script which allows for dozens of modifications you can make to eDirectory User accounts. For example, you can create a user in eDirectory, and set several of their attributes at the time of the user creation event.
+Cimitra's eDirectory Practice is one Bash script which allows for dozens of modifications you can make to eDirectory User accounts. For example, you can create a user in eDirectory, and set several of their attributes at the time of the user creation event.
 
 Or you can modify only one or some attributes of an existing eDirectory User account.
 
@@ -13,7 +13,7 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 1. In a terminal on a Linux server, most likely a SUSE Server with eDirectory installed
 
-2. Install the Cimitra's eDirectory Script with the command below:
+2. Install Cimitra's eDirectory Practice Bash script with the command below:
 
     **curl -fsSL https://git.io/Jc5Yj | sh **
 
@@ -23,7 +23,7 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 4. **Run** the script as follows: ./cimitra_edir.sh**
 
-# CONFIGURE SETTINGS FILE
+# CONFIGURE THE SCRIPT SETTINGS FILE
 
 1. **Edit** the **settings_edir.cfg** file with the settings needed to authenticate to your eDirectory tree via LDAP
 \
@@ -31,7 +31,7 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 **"[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]"**
 \
 
-    (a.) Fill in the settings config file, make sure that you at least fill in:
+    (a.) Fill in the settings config file, make sure that you at least modify these lines:
 
    **EDIR_AUTH_STRING**
 
@@ -55,7 +55,7 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 **TEST YOUR SETTINGS**
 
-To do a **quick test** to see if everything is configured correctly, then run the Cimitra eDirectory Practice script as follows: 
+To do a **quick test** to see if everything is configured correctly, run the Cimitra eDirectory Practice script as follows: 
 
 *Run:* ./cimitra_edir.sh -Action "[some action]"
   
@@ -79,7 +79,7 @@ To do a **quick test** to see if everything is configured correctly, then run th
 
  iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
  
-  - Choose a Context users that will be administered within Cimitra
+  - Choose a Context for users that will be administered within Cimitra
   - Add Trustee
   - Choose the Cimitra Admin, *Example:* cimitra_admin.edir_o
   - Choose **Assigned Rights**
