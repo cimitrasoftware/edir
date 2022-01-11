@@ -89,7 +89,6 @@ To do a **quick test** to see if everything is configured correctly, then run th
 (a.) eDirectory Trustee rights within contexts to be administered within Cimitra
 
  iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
-
     - Choose a Context users that will be administered within Cimitra
     - Add Trustee
     - Choose the Cimitra Admin, *Example:* cimitra_admin.edir_o
