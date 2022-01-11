@@ -102,13 +102,12 @@ Repeat step (a.) for each context with users that will be administered within Ci
 (b.) eDirectory Trustee rights to Root organization of the tree (don't worry, no admin rights needed here)
 
  iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
-
-   - Choose a Root context of the tree
-   - Add Trustee
-   - Choose the Cimitra Admin, Example: cimitra_admin.edir_o
-   - Choose **Assigned Rights**
-   - Select **Read** and **Inherit** for [All Attributes Rights] 
-   - Select **Done** | **Apply**
+  - Choose a Root context of the tree
+  - Add Trustee
+  - Choose the Cimitra Admin, Example: cimitra_admin.edir_o
+  - Choose **Assigned Rights**
+  - Select **Read** and **Inherit** for [All Attributes Rights] 
+  - Select **Done** | **Apply**
 
 Edit the Cimitra eDirectory Practice Settings File: 
 
