@@ -26,11 +26,11 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 2. Install the Cimitra's eDirectory Script with the command below:
 
-curl -fsSL https://git.io/Jc5Yj | sh 
+    **curl -fsSL https://git.io/Jc5Yj | sh **
 
 3. Go to the directory /var/opt/cimitra/scritps/edir
 
-cd /var/opt/cimitra/scritps/edir
+    **cd /var/opt/cimitra/scritps/edir**
 
 4. **Run** the script as follows: ./cimitra_edir.sh**
 
@@ -73,7 +73,7 @@ To do a **quick test** to see if everything is configured correctly, then run th
 
 *Run:* ./cimitra_edir.sh -Action "[some action]"
   
-*EXAMPLE:*  **./cimitra_edir.sh -Action "UserReport" -UserId "jdoe" -Context "ou=users,o=edir_o"**
+*EXAMPLE:*  **./cimitra_edir.sh -Action "ListAllUsersInTree"**
 
 -OR-
 
@@ -82,42 +82,42 @@ To do a **quick test** to see if everything is configured correctly, then run th
 ***NOTE: There is no need to proceed until you have actually gotten a test to work!***
   
 **[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
-\
+
 ***NOTE: Follow this section if you intend to make a "Cimitra Admin" account rather than using an already established Admin-level eDirectory account***
 
 1. Create a new user in eDirectory specific to cimitra, *Example:* cimitra_admin.edir_o
 
 2. Give the cimitra_admin user the following rights: 
 
-(a.) eDirectory Trustee rights within contexts to be administered within Cimitra
+   (a.) eDirectory Trustee rights within contexts to be administered within Cimitra
 
-iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
+    iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
 
-- Choose a Context users that will be administered within Cimitra
-- Add Trustee
-- Choose the Cimitra Admin, *Example:* cimitra_admin.edir_o
-- Choose **Assigned Rights**
-- Select **Supervisor** for both [All Attributes Rights] & [Entry Rights]
-- Select **Done** | **Apply**
+    - Choose a Context users that will be administered within Cimitra
+    - Add Trustee
+    - Choose the Cimitra Admin, *Example:* cimitra_admin.edir_o
+    - Choose **Assigned Rights**
+    - Select **Supervisor** for both [All Attributes Rights] & [Entry Rights]
+    - Select **Done** | **Apply**
 
 Repeat step (a.) for each context with users that will be administered within Cimitra
 
-(b.) eDirectory Trustee rights to Root organization of the tree (don't worry, no admin rights needed here)
+   (b.) eDirectory Trustee rights to Root organization of the tree (don't worry, no admin rights needed here)
 
-iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
+    iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
 
-- Choose a Root context of the tree
-- Add Trustee
-- Choose the Cimitra Admin, Example: cimitra_admin.edir_o
-- Choose **Assigned Rights**
-- Select **Read** and **Inherit** for [All Attributes Rights] 
-- Select **Done** | **Apply**
+   - Choose a Root context of the tree
+   - Add Trustee
+   - Choose the Cimitra Admin, Example: cimitra_admin.edir_o
+   - Choose **Assigned Rights**
+   - Select **Read** and **Inherit** for [All Attributes Rights] 
+   - Select **Done** | **Apply**
 
 Edit the Cimitra eDirectory Practice Settings File: 
 
 /var/opt/cimitra/scritps/edir/settings_edir.cfg
 
-Update the following two setting: 
+Update the following two settings: 
 
 *Example*
 
@@ -176,24 +176,4 @@ Here are the actions you can take with this script.
 **[READ AND FOLLOW THIS DOCUMENT - Instructions for importing Cimitra Pre-Made Actions](https://github.com/cimitrasoftware/edir/blob/main/edir_import_instructions.pdf)**
 
 **NOTE: Make sure to download the PDF file so you can use the Copy and Paste feature**
-
--OR-
-
-FOLLOW THESE STEPS
-
- 1. Go to app.cimitra.com
- 2. Login as Userid: import@cimitra.com | Password: 123
- 3. Go to the NetIQ eDirectory Folder
- 4. If you have already installed the Cimitra eDirectory Practice, skip importing the "INSTALL NETIQ EDIRECTORY PRACTICE"
- 5. If you haven't done the install, then click in the "INSTALL NETIQ EDIRECTORY PRACTICE" Action
- 6. Copy the **Import URL** to the URL to your computer's clipboard **STAY LOGGED INTO app.cimitra.com**
- 7. Log in as an Admin user in your Cimitra System
- 8. Create a Cimitra Folder where you are going to place the Cimitra Actions you are importing
- 9. Select Create | **Import** (If you don't see "Import" under the Create menu, upgrade your Cimitra server)
-    (a.) To Upgrade Your Cimitra Server: cimitra server upgrade
- 10. When you get the Import dialog, select the URL option and **paste the Import URL** from step 6.
- 11. When the Action create dialog comes up, **choose the Linux based Cimitra Agent that you installed earlier on the Linux server with access to eDirectory**
- 12. For each Cimitra Action you see, **follow the same import actions for each Cimitra Action** you see that you want to use in your own Cimitra system
- 
- NOTE: You will need to **change the Context/Division in each Cimitra Action** that you import, in order to for the Cimitra Actions to match your eDirectory contexts
 
