@@ -1,22 +1,11 @@
 **Cimitra's eDirectory Practice**
+**30 Common Actions For eDirectory Accounts**
 
 ![edir_practice_main_screen](https://user-images.githubusercontent.com/55113746/123368617-5c1a1f00-d539-11eb-842e-4010b50c7bc3.JPG)
 
 **Cimitra's eDirectory Practice**
-Sections Below
 
-- **[INSTALL](#[INSTALL])**
-
-**[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
-
-**[ WHAT THIS SCRIPT CAN DO ]**
-
-**[ IMPORTING ACTIONS INTO CIMITRA THAT USE THE CIMITRA EDIRECTORY PRACTICE SCRIPT ]**
-
-
-**30 Common Actions For eDirectory Accounts**
-
-This script allows for dozens of modifications you can make to eDirectory User accounts. For example, you can create a user in eDirectory, and set several of their attributes at the time of the user creation event.
+Cimitra's eDirectory Practice is on Bash script which allows for dozens of modifications you can make to eDirectory User accounts. For example, you can create a user in eDirectory, and set several of their attributes at the time of the user creation event.
 
 Or you can modify only one or some attributes of an existing eDirectory User account.
 
@@ -120,6 +109,9 @@ Update the following two settings:
 **EDIR_USER="cn=cimitra_admin,o=edir_o"**
 **EDIR_AUTH_STRING="YouLetC1m1tra1n"**
 
+**[READ AND FOLLOW THIS DOCUMENT - Instructions for importing Cimitra Pre-Made Actions](https://github.com/cimitrasoftware/edir/blob/main/edir_import_instructions.pdf)**
+
+**NOTE: Make sure to download the PDF file so you can use the Copy and Paste feature**
 
 **[ WHAT THIS SCRIPT CAN DO ]**
 
@@ -159,17 +151,11 @@ Here are the actions you can take with this script.
  
  **[ IMPORTING ACTIONS INTO CIMITRA THAT USE THE CIMITRA EDIRECTORY PRACTICE SCRIPT ]**
  
- **Copying the Import URL from app.cimitra.com | Importing Into Your Cimitra System**
- 
- **COPY (Looping Animated GIF)**
- 
-![create_user](https://user-images.githubusercontent.com/55113746/123368943-fa0de980-d539-11eb-9ab5-0dd05d11d6da.gif)
+ ** Importing Into Your Cimitra System**
  
  **IMPORT (Looping Animated GIF)**
  
 ![import_create_user](https://user-images.githubusercontent.com/55113746/123369537-2bd38000-d53b-11eb-8fb3-248cda30fd2b.gif)
 
-**[READ AND FOLLOW THIS DOCUMENT - Instructions for importing Cimitra Pre-Made Actions](https://github.com/cimitrasoftware/edir/blob/main/edir_import_instructions.pdf)**
 
-**NOTE: Make sure to download the PDF file so you can use the Copy and Paste feature**
 
