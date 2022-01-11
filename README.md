@@ -20,7 +20,7 @@ This script allows for dozens of modifications you can make to eDirectory User a
 
 Or you can modify only one or some attributes of an existing eDirectory User account.
 
-# INSTALL
+# INSTALL CIMITRA EDIRECTORY PRACTICE SCRIPT
 
 1. In a terminal on a Linux server, most likely a SUSE Server with eDirectory installed
 
@@ -34,21 +34,23 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 4. **Run** the script as follows: ./cimitra_edir.sh**
 
-5. **Edit** the **settings_edir.cfg** file with the settings needed to authenticate to your eDirectory tree via LDAP
+# CONFIGURE CIMITRA EDIRECTORY PRACTICE SCRIPT SETTINGS FILE
+
+1. **Edit** the **settings_edir.cfg** file with the settings needed to authenticate to your eDirectory tree via LDAP
 \
 ***NOTE:*** If you don't want to use an already established Admin Level eDirectory account read the section below titled:  
 **"[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]"**
 \
 
-(a.) Fill in the settings config file, make sure that you at least fill in:
+    (a.) Fill in the settings config file, make sure that you at least fill in:
 
-**EDIR_AUTH_STRING**
+     **EDIR_AUTH_STRING**
 
-**EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_ONE** 
+     **EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_ONE** 
 
-**EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_ONE**
+     **EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_ONE**
 
-**EDIR_USER**
+     **EDIR_USER**
 
 ***[Example]***
 
