@@ -100,6 +100,7 @@ Edit the Cimitra eDirectory Practice Settings File:
 Update the following two settings: 
 
 **EDIR_USER**
+*and*
 **EDIR_AUTH_STRING**
 
 *Example*
