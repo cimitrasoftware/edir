@@ -60,7 +60,7 @@ To do a **test** to see if everything is configured correctly, run the Cimitra e
 **./cimitra_edir.sh -Action "ListAllUsersInTree"**
 
 
-**NOTE: THERE IS NO NEED TO PROCEED UNTIL THE TEST WORKS **
+**NOTE: THERE IS NO NEED TO PROCEED UNTIL THE TEST WORKS**
   
 **[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
 
