@@ -86,9 +86,9 @@ To do a **quick test** to see if everything is configured correctly, then run th
 
 2. Give the cimitra_admin user the following rights: 
 
-   (a.) eDirectory Trustee rights within contexts to be administered within Cimitra
+(a.) eDirectory Trustee rights within contexts to be administered within Cimitra
 
-    iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
+ iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
 
     - Choose a Context users that will be administered within Cimitra
     - Add Trustee
@@ -99,9 +99,9 @@ To do a **quick test** to see if everything is configured correctly, then run th
 
 Repeat step (a.) for each context with users that will be administered within Cimitra
 
-   (b.) eDirectory Trustee rights to Root organization of the tree (don't worry, no admin rights needed here)
+(b.) eDirectory Trustee rights to Root organization of the tree (don't worry, no admin rights needed here)
 
-    iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
+ iManager | Roles and Tasks | Rights | Modify Trustees | Object Name 
 
    - Choose a Root context of the tree
    - Add Trustee
