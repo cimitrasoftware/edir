@@ -17,9 +17,9 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 **curl -fsSL https://git.io/Jc5Yj | sh**
 
-3. Go to the directory /var/opt/cimitra/scritps/edir
+3. Go to the directory /var/opt/cimitra/scripts/edir
 
-**cd /var/opt/cimitra/scritps/edir**
+**cd /var/opt/cimitra/scripts/edir**
 
 4. **Run** the script: cimitra_edir.sh
 
@@ -33,7 +33,7 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 **"[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]"**
 \
 
-    (a.) Fill in the settings config file, make sure that you at least modify these lines:
+    (a.) Modify the settings file, make sure that you at least modify these lines:
 
    **EDIR_AUTH_STRING**
 
@@ -65,7 +65,7 @@ To do a **test** to see if everything is configured correctly, run the Cimitra e
 **NOTE: THERE IS NO NEED TO PROCEED UNTIL THE TEST WORKS**
   
 **[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
-
+***NOTE: THIS SECTION IS OPTIONAL***
 ***NOTE: Follow this section if you intend to make a "Cimitra Admin" account rather than using an already established Admin-level eDirectory account***
 
 1. Create a new user in eDirectory specific to cimitra, *Example:* cimitra_admin.edir_o
@@ -102,7 +102,9 @@ Edit the Cimitra eDirectory Practice Settings File:
 Update the following two settings: 
 
 **EDIR_USER**
+
 *and*
+
 **EDIR_AUTH_STRING**
 
 *Example*
