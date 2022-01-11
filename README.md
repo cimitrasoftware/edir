@@ -115,9 +115,9 @@ Update the following two settings:
 
 # IMPORTING CIMITRA ACTIONS
 
-**[READ AND FOLLOW THIS DOCUMENT - Instructions for importing Cimitra Pre-Made Actions](https://github.com/cimitrasoftware/edir/blob/main/edir_import_instructions.pdf)**
+**[DOWNLOAD, READ AND FOLLOW THIS DOCUMENT - IMPORTING CIMITRA PREMADE ACTIONS](https://github.com/cimitrasoftware/edir/blob/main/edir_import_instructions.pdf)**
 
-**NOTE: Make sure to download the PDF file so you can use the Copy and Paste feature**
+**NOTE: Make sure to DOWNLOAD the PDF file so you can use the Copy and Paste feature**
 
 # ADDITIONAL INFORMATION
 
