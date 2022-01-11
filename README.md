@@ -155,9 +155,7 @@ Here are the actions you can take with this script.
  
  **[ IMPORTING ACTIONS INTO CIMITRA THAT USE THE CIMITRA EDIRECTORY PRACTICE SCRIPT ]**
  
- ** Importing Into Your Cimitra System**
- 
- **IMPORT (Looping Animated GIF)**
+ **IMPORT DEMONSTRATION (Looping Animated GIF)**
  
 ![import_create_user](https://github.com/cimitrasoftware/edir/blob/main/cimitra_import_action_two.gif)
 
