@@ -115,6 +115,8 @@ Update the following two settings:
 
 **NOTE: Make sure to download the PDF file so you can use the Copy and Paste feature**
 
+# ADDITIONAL INFORMATION
+
 **[ WHAT THIS SCRIPT CAN DO ]**
 
 Here are the actions you can take with this script.
