@@ -99,9 +99,13 @@ Edit the Cimitra eDirectory Practice Settings File:
 
 Update the following two settings: 
 
+**EDIR_USER**
+**EDIR_AUTH_STRING**
+
 *Example*
 
 **EDIR_USER="cn=cimitra_admin,o=edir_o"**
+
 **EDIR_AUTH_STRING="YouLetC1m1tra1n"**
 
 # IMPORTING CIMITRA ACTIONS
