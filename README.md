@@ -23,7 +23,7 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 4. **Run** the script as follows: ./cimitra_edir.sh**
 
-# CONFIGURE CIMITRA EDIRECTORY PRACTICE SCRIPT SETTINGS FILE
+# CONFIGURE SETTINGS FILE
 
 1. **Edit** the **settings_edir.cfg** file with the settings needed to authenticate to your eDirectory tree via LDAP
 \
@@ -108,6 +108,8 @@ Update the following two settings:
 
 **EDIR_USER="cn=cimitra_admin,o=edir_o"**
 **EDIR_AUTH_STRING="YouLetC1m1tra1n"**
+
+# IMPORTING CIMITRA ACTIONS
 
 **[READ AND FOLLOW THIS DOCUMENT - Instructions for importing Cimitra Pre-Made Actions](https://github.com/cimitrasoftware/edir/blob/main/edir_import_instructions.pdf)**
 
