@@ -21,7 +21,9 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 **cd /var/opt/cimitra/scritps/edir**
 
-4. **Run** the script as follows: **./cimitra_edir.sh**
+4. **Run** the script: cimitra_edir.sh
+
+**./cimitra_edir.sh**
 
 # CONFIGURE THE SCRIPT SETTINGS FILE
 
