@@ -55,17 +55,12 @@ cd /var/opt/cimitra/scritps/edir
 
 **TEST YOUR SETTINGS**
 
-To do a **quick test** to see if everything is configured correctly, run the Cimitra eDirectory Practice script as follows: 
+To do a **test** to see if everything is configured correctly, run the Cimitra eDirectory Practice script as follows: 
 
-*Run:* ./cimitra_edir.sh -Action "[some action]" | For Example: 
-  
 **./cimitra_edir.sh -Action "ListAllUsersInTree"**
 
--OR-
 
-**./cimitra_edir.sh -Action "ListUsersInContext" -Context "ou=users,o=edir_o"**
-
-***NOTE: There is no need to proceed until you have actually gotten a test to work!***
+**NOTE: THERE IS NO NEED TO PROCEED UNTIL THE TEST WORKS **
   
 **[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
 
