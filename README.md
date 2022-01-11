@@ -159,7 +159,7 @@ Here are the actions you can take with this script.
  
  **IMPORT (Looping Animated GIF)**
  
-![import_create_user](https://user-images.githubusercontent.com/55113746/123369537-2bd38000-d53b-11eb-8fb3-248cda30fd2b.gif)
+![import_create_user](https://github.com/cimitrasoftware/edir/blob/main/cimitra_import_action_two.gif)
 
 
 
