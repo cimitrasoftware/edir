@@ -119,6 +119,9 @@ Update the following two settings:
 
 **NOTE: Make sure to DOWNLOAD the PDF file so you can use the Copy and Paste feature**
 
+**IMPORT DEMONSTRATION (Looping Animated GIF)**
+ 
+![import_create_user](https://github.com/cimitrasoftware/edir/blob/main/cimitra_import_action_two.gif)
 
 # DEFINING AN EXCLUDE GROUP
 The Cimitra eDirectory Practice allows for an "Exclude Group". The purpose of the Exclude Group is to define users that cannot be seen or modified via the Actions in the Cimitra eDirectory Practice. This way if a user exists in an eDirectory context you have allowed to administered with Cimitra, you can still effectively hide eDirectory users who you do not want anyone modifying via Cimitra. These are the steps to defining an "Exclude Group" for Cimtra. 
@@ -172,11 +175,7 @@ Here are the actions you can take with this script.
 30. Bulk add users to an eDirectory Group
  
  
- **[ IMPORTING ACTIONS INTO CIMITRA THAT USE THE CIMITRA EDIRECTORY PRACTICE SCRIPT ]**
- 
- **IMPORT DEMONSTRATION (Looping Animated GIF)**
- 
-![import_create_user](https://github.com/cimitrasoftware/edir/blob/main/cimitra_import_action_two.gif)
+
 
 
 
