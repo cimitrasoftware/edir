@@ -43,7 +43,7 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
    **EDIR_USER**
 
-   ***[Example]***
+   ***[Example Settings File]***
 
        EDIR_AUTH_STRING="YouLetC1m1tra1n"
        EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_ONE="192.168.1.53"
@@ -133,7 +133,7 @@ The Cimitra eDirectory Practice allows for an "Exclude Group". The purpose of th
 
 Example: **EDIR_EXCLUDE_GROUP="cn=cimitra_exclude,o=edir_o"**
 
-   ***[Example]***
+   ***[Example Settings File]***
 
        EDIR_AUTH_STRING="YouLetC1m1tra1n"
        EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_ONE="192.168.1.53"
