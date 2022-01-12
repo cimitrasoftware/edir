@@ -133,6 +133,19 @@ The Cimitra eDirectory Practice allows for an "Exclude Group". The purpose of th
 
 Example: **EDIR_EXCLUDE_GROUP="cn=cimitra_exclude,o=edir_o"**
 
+   ***[Example]***
+
+       EDIR_AUTH_STRING="YouLetC1m1tra1n"
+       EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_ONE="192.168.1.53"
+       EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_ONE="389"
+       EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_TWO="192.168.1.54"
+       EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_TWO="389"
+       EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS_THREE="192.168.1.54"
+       EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT_THREE="389"
+       EDIR_USER="cn=cimitra_admin,o=edir_o"
+       EDIR_EXCLUDE_GROUP="cn=cimitra_exclude,o=edir_o"
+
+
 When the Exclude Group feature is working correctly, if you list the users in an eDirectory context via a Cimitra Action that contains a user in the Exclude Group, the user will not show up on the list of users. If someone actually tries to view the details, or modify a user who is in the Exclude Group, they will get an error "ERROR: Insufficent Rights to Administer User".
 
 ![rights_error](https://github.com/cimitrasoftware/edir/blob/main/rights_error.JPG)
