@@ -119,6 +119,21 @@ Update the following two settings:
 
 **NOTE: Make sure to DOWNLOAD the PDF file so you can use the Copy and Paste feature**
 
+
+# DEFINING AN EXCLUDE GROUP
+The Cimitra eDirectory Practice allows for an "Exclude Group". The purpose of the Exclude Group is to define users that cannot be seen or modified via the Actions in the Cimitra eDirectory Practice. This way if a user exists in an eDirectory context you have allowed to administered with Cimitra, you can still effectively hide eDirectory users who you do not want anyone modifying via Cimitra. These are the steps to defining an "Exclude Group" for Cimtra. 
+
+1. Create a Group object in eDirectory, in our case we will create a group by the name of **cimitra_exclude**
+2. Add users who you want hidden from the Cimitra eDirectory Practice to that Group
+3. Add fully distinguished name for the group, into the /var/opt/cimitra/scritps/edir/settings_edir.cfg file
+4. Modify the line that reads:  **EDIR_EXCLUDE_GROUP**
+
+Example: EDIR_EXCLUDE_GROUP="cn=cimitra_exclude,o=edir_o"
+
+When the Exclude Group feature is working correctly, if you list the users in an eDirectory context via a Cimitra Action that contains a user in the Exclude Group, the user will not show up on the list of users. If someone actually tries to view the details, or modify a user who is in the Exclude Group, they will get an error "ERROR: Insufficent Rights to Administer User".
+
+![rights_error](https://github.com/cimitrasoftware/edir/blob/main/rights_error.JPG)
+
 # ADDITIONAL INFORMATION
 
 **[ WHAT THIS SCRIPT CAN DO ]**
