@@ -28,10 +28,10 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 # CONFIGURE THE SCRIPT SETTINGS FILE
 
 1. **Edit** the **settings_edir.cfg** file with the settings needed to authenticate to your eDirectory tree via LDAP
-\
+
 ***NOTE:*** If you don't want to use an already established Admin Level eDirectory account read the section below titled:  
 **"[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]"**
-\
+
 
     (a.) Modify the settings file, make sure that you at least modify these lines:
 
