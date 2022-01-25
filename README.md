@@ -5,7 +5,7 @@
 
 # Cimitra's eDirectory Practice
 
-[VIDEO DOCUMENTATION](https://youtu.be/77eIpHafs7E){:target="_blank"}
+**[VIDEO DOCUMENTATION](https://youtu.be/77eIpHafs7E)**
 
 Cimitra's eDirectory Practice is one Bash script which allows for dozens of modifications you can make to eDirectory User accounts. For example, you can create a user in eDirectory, and set several of their attributes at the time of the user creation event.
 
