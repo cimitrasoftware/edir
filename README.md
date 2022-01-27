@@ -33,7 +33,7 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 ***NOTE:*** If you don't want to use an already established Admin Level eDirectory account read the section below titled: 
 
-"CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT"
+**"CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT"**
 
 **Modify** the settings file, make sure that you at least modify these lines:
 
