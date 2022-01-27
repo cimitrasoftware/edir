@@ -117,7 +117,7 @@ Update the following two settings:
 
 **EDIR_AUTH_STRING="YouLetC1m1tra1n"**
 
-# IMPORTING CIMITRA ACTIONS
+# IMPORTING PRE-MADE CIMITRA ACTIONS THAT USE THE CIMITRA EDIRECTORY ADMINISTRATION PRACTICE SCRIPT
 
 **[DOWNLOAD, READ AND FOLLOW THIS DOCUMENT - IMPORTING CIMITRA PREMADE ACTIONS](https://github.com/cimitrasoftware/edir/blob/main/cimitra_edir_instructions.docx?raw=true)**
 
