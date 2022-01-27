@@ -66,7 +66,8 @@ To do a **test** to see if everything is configured correctly, run the Cimitra e
 
 **NOTE: THERE IS NO NEED TO PROCEED UNTIL THE TEST WORKS**
   
-**[ CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT ]**
+# CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT
+
 ***NOTE: THIS SECTION IS OPTIONAL***
 ***NOTE: Follow this section if you intend to make a "Cimitra Admin" account rather than using an already established Admin-level eDirectory account***
 
