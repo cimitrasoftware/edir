@@ -1,9 +1,9 @@
-**Cimitra's eDirectory Practice**
+# Cimitra's eDirectory Practice
 **30 Common Actions For eDirectory Accounts**
 
 ![edir_practice_main_screen](https://user-images.githubusercontent.com/55113746/123368617-5c1a1f00-d539-11eb-842e-4010b50c7bc3.JPG)
 
-# Cimitra's eDirectory Practice
+
 
 **[VIDEO DOCUMENTATION](https://youtu.be/77eIpHafs7E)**
 
