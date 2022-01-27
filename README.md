@@ -57,10 +57,10 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 **TEST YOUR SETTINGS**
 
-To do a **test** to see if everything is configured correctly, run the Cimitra eDirectory Practice script as follows: 
+To do a **test** to see if everything is configured correctly, run the Cimitra eDirectory Practice script as follows:  
 
 
-**./cimitra_edir.sh -Action "ListAllUsersInTree"**
+**./cimitra_edir.sh -Action "ListAllUsersInTree"**  
 
 
 
