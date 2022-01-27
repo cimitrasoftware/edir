@@ -31,7 +31,7 @@ Or you can modify only one or some attributes of an existing eDirectory User acc
 
 ***NOTE:*** If you don't want to use an already established Admin Level eDirectory account read the section below titled: 
 
-[CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT](https://github.com/cimitrasoftware/edir/blob/main/README.md#creating-a-cimitra-edirectory-admin-account)
+**[CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT](https://github.com/cimitrasoftware/edir/blob/main/README.md#creating-a-cimitra-edirectory-admin-account)**
 
 **Modify** the settings file, make sure that you at least modify these lines:
 
