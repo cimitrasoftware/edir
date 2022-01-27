@@ -63,7 +63,7 @@ To do a **test** to see if everything is configured correctly, run the Cimitra e
 
 
 **NOTE: THERE IS NO NEED TO PROCEED UNTIL THE TEST WORKS**
-**[VIDEO DOCUMENTATION]()**
+**[VIDEO DOCUMENTATION](https://github.com/cimitrasoftware/edir/blob/main/README.md)**
   
 # CREATING A CIMITRA EDIRECTORY ADMIN ACCOUNT
 
