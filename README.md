@@ -3,6 +3,17 @@
 
 ![edir_practice_main_screen](https://user-images.githubusercontent.com/55113746/123368617-5c1a1f00-d539-11eb-842e-4010b50c7bc3.JPG)
 
+# Color Test Document
+
+
+<style>H1{color:Blue;}</style>
+<style>H2{color:DarkOrange;}</style>
+<style>p{color:Black;}</style>
+
+
+## Second Heading
+
+This is a test to see how the colors work.
 
 
 **[VIDEO DOCUMENTATION](https://youtu.be/77eIpHafs7E)**
