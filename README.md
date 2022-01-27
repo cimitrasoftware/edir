@@ -121,7 +121,7 @@ Update the following two settings:
 
 **[DOWNLOAD, READ AND FOLLOW THIS DOCUMENT - IMPORTING CIMITRA PREMADE ACTIONS](https://github.com/cimitrasoftware/edir/blob/main/cimitra_edir_instructions.docx?raw=true)**
 
-**NOTE: Make sure to DOWNLOAD the PDF file so you can use the Copy and Paste feature**
+**NOTE: Make sure to DOWNLOAD the docx file so you can use the Copy and Paste feature**. On Windows, you can view this document in WordPad.
 
 **IMPORT DEMONSTRATION (Looping Animated GIF)**
  
