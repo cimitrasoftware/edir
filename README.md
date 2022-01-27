@@ -9,9 +9,15 @@ Cimitra's eDirectory Practice is one Bash script which allows for dozens of modi
 
 Or you can modify only one or some attributes of an existing eDirectory User account.
 
+# PREREQUISITES
+
+1. Identify a Linux host that has access to LDAP Tools. This will most likely be a SUSE variant of Linux. 
+
+2. Deploy the Cimitra Agent for Linux on the Linux host
+
 # INSTALL CIMITRA EDIRECTORY PRACTICE SCRIPT
 
-1. In a terminal on a Linux server, most likely a SUSE Server with eDirectory installed
+1. In a terminal on the Linux host sudo in to get sufficient rights for the installation
 
 2. Install Cimitra's eDirectory Practice Bash script with the command below:
 
